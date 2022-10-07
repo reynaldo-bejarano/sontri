@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <script src="./app.js" defer></script>
+    <title>Sotri</title>
+</head>
+<style type="text/tailwindcss">
+    @layer base {
+        html {
+            font-family: 'Signika Negative', sans-serif;
+            scroll-behavior: smooth;
+        }
+    }
+</style>
+
+<body>
+
+    <nav class="bg-[#113b65] border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-[#113b65]">
+        <div class="container flex flex-wrap justify-between items-center mx-auto">
+            <a href="#" class="flex items-center">
+                <span
+                    class="self-center text-white text-xl font-semibold whitespace-nowrap dark:text-white">Sontri</span>
+            </a>
+            <button data-collapse-toggle="navbar-default" type="button"
+                class="inline-flex items-center p-2 ml-3 text-sm text-white bg-gray-700 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                aria-controls="navbar-default" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                        clip-rule="evenodd"></path>
+                </svg>
+            </button>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                <ul
+                    class="flex flex-col p-4 mt-4 bg-gray-800 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-gray-800 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+
+                    <li>
+                        <a href="./index.html"
+                            class="block py-2 pr-4 pl-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Fase
+                            analisis</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 pr-4 pl-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Fase
+                            diseño</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- banner -->
+    <section class="h-screen" id="banner">
+        <div class="grid justify-items-center my-10">
+            <img src="./assets/logo.png" alt="logo sontri" />
+            <h2 class="w-[90%] md:w-[60%] text-center text-2xl text-slate-700">
+                Sistema de software que permite la gestión y control del mantenimiento de sus clientes
+                empresariales, así como la segmentación de estos por gustos y edades ante las posibles
+                demandas del
+                mercado.
+            </h2>
+        </div>
+    </section>
+    <section>
+        <div class="h-screen" id="caso1">
+            <div class="mb-5">
+                <p class="text-center font-bold text-blue-900">Caso de uso</p>
+                <p class="text-center text-3xl">CRUD Base de datos</p>
+            </div>
+            <div class="flex justify-center ">
+                <img src="./assets/caso1.png" alt="caso 1" />
+            </div>
+        </div>
+
+        <div class="h-screen" id="caso2">
+            <div class="mb-5">
+                <p class="text-center font-bold text-blue-900">Caso de uso</p>
+                <p class="text-center text-3xl">CRUD Base de datos</p>
+            </div>
+            <div class="flex justify-center ">
+                <img src="./assets/caso1.png" alt="caso 1" />
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="py-10" id="secuencias">
+            <div class="grid justify-center ">
+                <div class="h-screen">
+                    <div class="py-5">
+                        <p class="text-center font-bold text-yellow-600">Diagrama de secuencia</p>
+                        <p class="text-center text-3xl">Registro de usuario</p>
+                    </div>
+                    <img src="./assets/secuencia1.png" alt="secuencia 1" />
+                </div>
+                <div class="h-screen">
+                    <div class="py-5">
+                        <p class="text-center font-bold text-yellow-600">Diagrama de secuencia</p>
+                        <p class="text-center text-3xl">Registro de cliente empresarial</p>
+                    </div>
+                    <img src="./assets/secuencia2.png" alt="secuencia 2" />
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
